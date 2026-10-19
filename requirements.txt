@@ -1,0 +1,6 @@
+gymnasium-robotics
+mujoco==3.2.7
+stable-baselines3[extra]
+sb3-contrib
+tensorboard
+imageio[ffmpeg]
