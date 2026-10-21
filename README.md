@@ -134,10 +134,10 @@ MuJoCo 版本过新，与 gymnasium-robotics 不兼容。降级：`pip install "
 
 ## 下一步计划
 
-- [ ] 跑完 FetchPush 完整训练：`--n-envs 8 --gradient-steps 4`，与单环境基准比较成功率（横轴分别用 Step 和 Relative）
-- [ ] 若 g4 效果良好，再测试 `--gradient-steps 2`（预计约 30 分钟）
-- [ ] FetchReach 的 HER 消融：`--no-her`
-- [ ] 多 seed 实验（seed 0/1/2，可在同一张 GPU 上同时运行）
-- [ ] 改超参数观察曲线变化：`gamma`、固定 `ent_coef`、`learning_starts`、`n_sampled_goal`
-- [ ] 参考 CleanRL 的 `sac_continuous_action.py`，用 PyTorch 手写 SAC + HER，在 FetchReach 上对齐 SB3 效果
+- [x] 跑完 FetchPush 完整训练：`--n-envs 8 --gradient-steps 4`，与单环境基准比较成功率（横轴分别用 Step 和 Relative）
+- [x] 若 g4 效果良好，再测试 `--gradient-steps 2`（预计约 30 分钟）
+- [x] FetchReach 的 HER 消融：`--no-her`
+- [x] 多 seed 实验（seed 0/1/2，可在同一张 GPU 上同时运行）
+- [x] 改超参数观察曲线变化：`gamma`、固定 `ent_coef`、`learning_starts`、`n_sampled_goal`
+- [x] 参考 CleanRL 的 `sac_continuous_action.py`，用 PyTorch 手写 SAC + HER，在 FetchReach 上对齐 SB3 效果
 - [ ] 进入下一阶段：Diffusion Policy（Push-T）→ BulletArm + 等变网络
